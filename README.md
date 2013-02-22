@@ -10,7 +10,7 @@ This puppet module allows you to create and attach amazon ebs volumes to EC2 ins
 * Attach the volume to instance doing the puppet run by specifying attached_to 'me'
 * Choose which device to attach to (required when attaching)
 
-More details are at [http://www.practicalclouds.com/content/guide/pclouds-ebsvol-provision-ebs-volumes-through-puppet]
+More details are [http://www.practicalclouds.com/content/guide/pclouds-ebsvol-provision-ebs-volumes-through-puppet](http://www.practicalclouds.com/content/guide/pclouds-ebsvol-provision-ebs-volumes-through-puppet)
 
 License
 -------
