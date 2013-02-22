@@ -1,5 +1,5 @@
 name    'pclouds-ebsvol'
-version '0.0.2'
+version '0.0.3'
 source 'http://github.com/practicalclouds/pclouds-ebsvol'
 author 'pclouds'
 license 'Apache License, Version 2.0'
