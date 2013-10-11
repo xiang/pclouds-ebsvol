@@ -26,6 +26,15 @@ Puppet::Type.newtype(:ebsvol) do
 		end
 	end
 
+	newparam(:snapshot) do
+		desc "The snapshot from which to create the volume."
+		validate do |value|
+			unless value =~ /^snap-[a-z0-9]{8}$/
+				raise ArgumentError , "ebsvol: #{value} is not a valid snapshot ID"
+			end
+		end
+	end
+
 	# Allow us to set the availability zone of use the one that
 	# matches the host by default.  
 	newparam(:availability_zone) do

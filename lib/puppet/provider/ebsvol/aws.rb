@@ -19,7 +19,7 @@ Puppet::Type.type(:ebsvol).provide(:aws) do
 		print "ebsvol[aws]->create: Region is #{region}\n" if $debug
 		print "ebsvol[aws]->create: Availability_zone is #{resource[:availability_zone]}\n" if $debug
 		# create the requested volume
-		response = compute.create_volume(resource[:availability_zone],resource[:size])	
+		response = compute.create_volume(resource[:availability_zone],resource[:size],resource[:snapshot])	
 		if (response.status == 200)
 			volumeid = response.body['volumeId']
 			print "ebsvol[aws]->create: I created volume #{volumeid}.\n" if $debug
